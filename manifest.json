@@ -1,0 +1,41 @@
+{
+    "name": "Godzilla Giroflex",
+    "version": "0.1",
+    "description": "Overrides the  Copy or Paste shortcuts to play the Godzilla scream and flip the screen 360º",
+    "permissions": ["activeTab", "tabs"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "commands": {
+      "copy" : {
+        "suggested_key": {
+          "default": "Ctrl+C",
+          "mac": "Command+C"
+        },
+        "description": "Copy"
+      },
+      "paste" : {
+        "suggested_key": {
+          "default": "Ctrl+V",
+          "mac": "Command+V"
+        },
+        "description": "Paste"
+      }
+    },
+    "page_action": {
+      "default_icon": {
+        "16": "images/godzilla16.png",
+        "32": "images/godzilla32.png",
+        "48": "images/godzilla48.png",
+        "128": "images/godzilla128.png"
+      }
+    },
+    "icons": {
+      "16": "images/godzilla16.png",
+      "32": "images/godzilla32.png",
+      "48": "images/godzilla48.png",
+      "128": "images/godzilla128.png"
+    },
+    "manifest_version": 2
+  }
